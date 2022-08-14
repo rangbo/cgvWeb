@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cgv</title>
+    <link href="css/movieChart.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_top content">
+            <h1 class="logo"><a href="index.html"><img src="image/logoRed.png" alt="로고"></a><span>CULTUREPLEX</span></h1>
+            <div class="adCard"><a href="#"><img src="image/adCard.png" alt="카드광고이미지"></a></div>
+            <ul class="loginWrap">
+                <li><a href="login.html"><img src="image/loginPassword.png" alt="로그인"><p>로그인</p></a></li>
+                <li><a href="#"><img src="image/loginJoin.png" alt="회원가입"><p>회원가입</p></a></li>
+                <li><a href="#"><img src="image/loginMember.png" alt="마이 씨지브이"><p>MY CGV</p></a></li>
+                <li><a href="customer.html"><img src="image/loginCustomer.png" alt="고객센터"><p>고객센터</p></a></li>
+            </ul>
+        </div>
+        <!--headertop-->
+        <div id="lnb">
+            <div class="menuContainer">
+                <div class="header_box content">
+                <h1 class="lnbLogo"><img src="image/logoWhite.png" alt="픽스헤더로고이미지"></h1>
+                    <ul class="menu">
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">극장</a></li>
+                        <li><a href="#">예매</a></li>
+                        <li><a href="#">스토어</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">혜택</a></li>
+                    </ul>
+                    <div class="searchWrap">
+                        <input type="text" id="topSearch" placeholder="극장판 시그널">
+                        <label for="topSearch"></label>
+                        <button type="submit" class="searchBtn"></button>
+                    </div>
+                </div>
+                <!--content-->
+            </div>
+            <!--menucontainer-->
+            <div class="drop_menu">
+                <ul class="dropmenu_box content">
+                    <li>
+                        <a class="subTitle" href="#">영화</a>
+                        <ul class="sub">
+                            <li><a href="movieChart.html">무비차트</a></li>
+                            <li><a href="arthouse.html">아트하우스</a></li>
+                            <li><a href="#">ICECOIN</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">극장</a>
+                        <ul class="sub">
+                            <li><a href="theater.html">CGV 극장</a></li>
+                            <li><a href="special.html">특별관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">예매</a>
+                        <ul class="sub">
+                            <li><a href="#">빠른예매</a></li>
+                            <li><a href="#">상영스케줄</a></li>
+                            <li><a href="#">English Ticketing</a></li>
+                            <li><a href="#">English Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">스토어</a>
+                        <ul class="sub">
+                            <li><a href="#">영화관람권</a></li>
+                            <li><a href="#">기프트카드</a></li>
+                            <li><a href="#">콤보</a></li>
+                            <li><a href="#">팝콘</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">스낵</a></li>
+                            <li><a href="#">플레이존</a></li>
+                            <li><a href="#">씨네샵</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">이벤트</a>
+                        <ul class="sub">
+                            <li><a href="#">SPECIAL</a></li>
+                            <li><a href="#">영화/예매</a></li>
+                            <li><a href="#">멤버십CLUB</a></li>
+                            <li><a href="#">CGV 극장별</a></li>
+                            <li><a href="#">제휴할인</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">종료된이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">CGV 할인정보</a>
+                        <ul class="sub">
+                            <li><a href="#">CLUB 서비스</a></li>
+                            <li><a href="#">VIP 라운지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--dropmenu_box-->
+            </div>
+            <!--dropmenu-->
+        </div>
+        <!-- //lnb -->
+    </header>
+
+    <main>
+
+        <div class="tab_wrap">
+            <div class="tab_menu_container content">
+                <h3 class="tabTitle">무비차트</h3>
+                <div class="tabBtn">
+                    <button class="tab_menu_btn on" type="button">무비차트</button>
+                    <button class="tab_menu_btn" type="button">상영예정작</button>
+                </div>
+            </div> <!-- tab_menu_container e -->
+            <div class="tab_box_container">
+                <div class="tab_box on">
+                    <div class="content">
+                        <div class="viewNowMov">
+                            <input type="checkbox" id="viewNowMov">
+                            <span>현재 상영작만 보기</span>
+                        </div>
+                        <section class="movChartWrap">
+                            <div class="movChart">
+                                <p class="movChartRank">No.1</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster1.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">뜨거운피</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRank">No.2</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster2.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">주술회전 0</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRank">No.3</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster3.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">문폴</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChartAd">
+                                <div class="movChartAdImg">
+                                    <img src="image/movChartAd.jpg" alt="차트광고이미지">
+                                </div>
+                                <div class="movChartAdText">
+                                    <p class="movChartAdText1">CGV 기프트카드</p>
+                                    <p class="movChartAdText2">감사의 마음을 선물하세요!</p>
+                                </div>
+                            </div>
+                            <!--movChartAd-->
+                        </section>
+                        <section class="movChartWrap">
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.4</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster4.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">스펜서</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.5</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster5.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">폐왕별희</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.6</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster6.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">부에노스 아이레스</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.7</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster7.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">더베트맨</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                        </section>
+                        <!--movChartWrap-->
+                        <div class="movChartAdLong content">
+                            <img src="image/longAd.jpg" alt="긴광고이미지">
+                        </div>
+                        <!--movChartAdLong-->
+                        <section class="movChartWrap">
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.8</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster8.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">벨파스트</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.9</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster9.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">이상한 나라의 수학자</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.10</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster10.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">고양이들의 아파트</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.11</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster11.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">도어맨</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                        </section>
+                        <!--movChartWrap-->
+                        <section class="movChartWrap">
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.12</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster12.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">에펠</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.13</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster13.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">리디밍 러브</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.14</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster14.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">레스 올림피아드</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.15</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster15.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">페러렐 마더스</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                        </section>
+                        <!--movChartWrap-->
+                        <section class="movChartWrap">
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.16</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster16.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">마스</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.17</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster17.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">더 퍼스트 플로어</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.18</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster18.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">레스 올림피아드</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRankGrey">No.19</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster19.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">더 장국영 데이</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉</p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                        </section>
+                        <!--movChartWrap-->
+                    </div>
+                    <!--content-->
+                </div>
+                <!--tab_box_on-->
+                <div class="tab_box">
+                    <div class="content">
+                        <section class="movChartWrap">
+                            <div class="movChart">
+                                <p class="movChartRank">이달의 추천영화</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster1.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">뜨거운피</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRank">이달의 추천영화</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster3.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">문폴</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChart">
+                                <p class="movChartRank">이달의 추천영화</p>
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster2.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">주술회전 0</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </div>
+                            <!--movChart-->
+                            <div class="movChartAd">
+                                <div class="movChartAdImg">
+                                    <img src="image/movChartAd.jpg" alt="차트광고이미지">
+                                </div>
+                                <div class="movChartAdText">
+                                    <p class="movChartAdText1">CGV 기프트카드</p>
+                                    <p class="movChartAdText2">감사의 마음을 선물하세요!</p>
+                                </div>
+                            </div>
+                            <!--movChartAd-->
+                        </section>
+                        <ol class="movOpenChartWrap">
+                            <p class="movOpenDate">2022. 03. 29(화)</p>
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster20.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">사랑 후의 두 여자</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster21.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">재춘언니</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster22.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">곡녀</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster1.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">뜨거운피</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster23.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">B컷</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                        </ol>
+                        <!--movOpenChartWrap-->
+                        <ol class="movOpenChartWrap">
+                            <p class="movOpenDate">2022. 04. 01(화)</p>
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster24.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">드라이</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster25.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">시그널</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                        </ol>
+                        <!--movOpenChartWrap-->
+                        <ol class="movOpenChartWrap">
+                            <p class="movOpenDate">2022. 04. 02(화)</p>
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster26.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">뷰 하인드</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                                <button class="buyTicketBtn" onclicke="location.href='#'" type="button">예매하기</button>
+                            </li>
+                            <!--movOpenChart-->
+                        </ol>
+                        <!--movOpenChartWrap-->
+                        <ol class="movOpenChartWrap">
+                            <p class="movOpenDate">2022. 04. 03(화)</p>
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster26.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">뷰 하인드</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster27.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">럭키드로우</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster28.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">로망스돌</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster29.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">너의 이름은</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster30.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">초속오센티미터</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                            </li>
+                            <!--movOpenChart-->
+                            <li class="movOpenChart">
+                                <a href="#">
+                                <div class="movChartImg">
+                                    <img src="image/poster31.jpg" alt="포스터이미지">
+                                    <sapn class="movChartBadge1"></sapn>
+                                </div>
+                                <!--movChartImg-->
+                                </a>
+                                <div class="movChartInfo">
+                                    <h3 class="movChartInfo-title"><a href="#">날씨의아이</a></h3>
+                                    <span class="movChartInfoCon1">예매율 <em>15.9%</em></span>
+                                    <span class="movChartInfoCon2">80%</span>
+                                    <p class="movChartInfoDate">2022.03.23 개봉<em>D-2</em></p>
+                                </div>
+                                <!--movChartInfo-->
+                            </li>
+                            <!--movOpenChart-->
+                        </ol>
+                        <!--movOpenChartWrap-->
+                    </div>
+                    <!--content-->
+                </div>
+                <!--tab_box-->
+            </div> <!-- tab_box_container-->
+
+            <div class="moreView content">
+                <button class="moreViewBtn">더보기</button>
+            </div>
+        </div> <!-- tab_wrap-->
+        <div class="scrollBtn">
+            <a href="movieChart.html" class="ticketBtn">예매하기</a>
+            <a href="#" class="upBtn top"><img src="image/upBtn.png" alt="상단이동버튼"></a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footAd">
+            <div class="footAdImg"><a href="#"><img src="image/footerAdImg.png" alt="하단광고이미지"></a></div>
+        </div>
+        <!--footAd-->
+        <div class="footInfo">
+            <div class="content">
+            <nav class="policyList">
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">IR</a>
+                </li>
+                <li>
+                    <a href="#">채용정보</a>
+                </li>
+                <li>
+                    <a href="#">광고/제휴/출점문의</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">편성기준</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">이메일주소무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">윤리경영</a>
+                </li>
+                <li>
+                    <a href="#">사이버감사실</a>
+                </li>
+            </nav>
+            <div class="companyInfo">
+                (04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br/>
+                대표이사 : 허민회 · 사업자등록번호 : 104-81-45690 · 통신판매업신고번호 : 2017-서울용산-0662 <a href="#">사업자정보확인</a><br/>
+                호스팅사업자 : CJ올리브네트웍스 · 개인정보보호 책입자 : 심준범 · 대표이메일 :cjcgvmaster@cj.net
+                CJ CGC. All Rights Reserved
+            </div>
+            </div>
+        </div>
+        <!--footInfo-->
+    </footer>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cgv</title>
+    <link href="css/theater.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_top content">
+            <h1 class="logo"><a href="index.html"><img src="image/logoRed.png" alt="로고"></a><span>CULTUREPLEX</span></h1>
+            <div class="adCard"><a href="#"><img src="image/adCard.png" alt="카드광고이미지"></a></div>
+            <ul class="loginWrap">
+                <li><a href="login.html"><img src="image/loginPassword.png" alt="로그인"><p>로그인</p></a></li>
+                <li><a href="#"><img src="image/loginJoin.png" alt="회원가입"><p>회원가입</p></a></li>
+                <li><a href="#"><img src="image/loginMember.png" alt="마이 씨지브이"><p>MY CGV</p></a></li>
+                <li><a href="customer.html"><img src="image/loginCustomer.png" alt="고객센터"><p>고객센터</p></a></li>
+            </ul>
+        </div>
+        <!--headertop-->
+        <div id="lnb">
+            <div class="menuContainer">
+                <div class="header_box content">
+                <h1 class="lnbLogo"><img src="image/logoWhite.png" alt="픽스헤더로고이미지"></h1>
+                    <ul class="menu">
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">극장</a></li>
+                        <li><a href="#">예매</a></li>
+                        <li><a href="#">스토어</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">혜택</a></li>
+                    </ul>
+                    <div class="searchWrap">
+                        <input type="text" id="topSearch" placeholder="극장판 시그널">
+                        <label for="topSearch"></label>
+                        <button type="submit" class="searchBtn"></button>
+                    </div>
+                </div>
+                <!--content-->
+            </div>
+            <!--menucontainer-->
+            <div class="drop_menu">
+                <ul class="dropmenu_box content">
+                    <li>
+                        <a class="subTitle" href="#">영화</a>
+                        <ul class="sub">
+                            <li><a href="#">무비차트</a></li>
+                            <li><a href="#">아트하스</a></li>
+                            <li><a href="#">ICECOIN</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">극장</a>
+                        <ul class="sub">
+                            <li><a href="#">CGV 극장</a></li>
+                            <li><a href="#">특별관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">예매</a>
+                        <ul class="sub">
+                            <li><a href="#">빠른예매</a></li>
+                            <li><a href="#">상영스케줄</a></li>
+                            <li><a href="#">English Ticketing</a></li>
+                            <li><a href="#">English Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">스토어</a>
+                        <ul class="sub">
+                            <li><a href="#">영화관람권</a></li>
+                            <li><a href="#">기프트카드</a></li>
+                            <li><a href="#">콤보</a></li>
+                            <li><a href="#">팝콘</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">스낵</a></li>
+                            <li><a href="#">플레이존</a></li>
+                            <li><a href="#">씨네샵</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">이벤트</a>
+                        <ul class="sub">
+                            <li><a href="#">SPECIAL</a></li>
+                            <li><a href="#">영화/예매</a></li>
+                            <li><a href="#">멤버십CLUB</a></li>
+                            <li><a href="#">CGV 극장별</a></li>
+                            <li><a href="#">제휴할인</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">종료된이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="subTitle" href="#">CGV 할인정보</a>
+                        <ul class="sub">
+                            <li><a href="#">CLUB 서비스</a></li>
+                            <li><a href="#">VIP 라운지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--dropmenu_box-->
+            </div>
+            <!--dropmenu-->
+        </div>
+        <!-- //lnb -->
+    </header>
+
+    <main class="content">
+
+        <section class="favorite">
+            <div class="favorite-top">
+                <h2 class="favorite-top__title"><img src="image/favorite_cgv.png" alt="자주가는 CGV"></h2>
+                <ul class="favorite-top__box">
+                    <li><a href="#"><span>1</span></a></li>
+                    <li><a href="#"><span>2</span></a></li>
+                    <li><a href="#"><span>3</span></a></li>
+                    <li><a href="#"><span>4</span></a></li>
+                    <li><a href="#"><span>5</span></a></li>
+                </ul>
+                <button type="button" onclick="location.href='#'" class="favorite-top__btn"></button>
+            </div>
+            <!-- // faborite-top -->
+            <div class="favorite-area">
+                <ul class="favorite-area__top">
+                    <li><a href="#">서울</a></li>
+                    <li><a href="#">경기</a></li>
+                    <li><a href="#">인천</a></li>
+                    <li><a href="#">강원</a></li>
+                    <li><a href="#">대전/충청</a></li>
+                    <li><a href="#">대구</a></li>
+                    <li><a href="#">부산/울산</a></li>
+                    <li><a href="#">경상</a></li>
+                    <li><a href="#">광주/전라/제주</a></li>
+                </ul>
+                <!-- // favorite-area__top-->
+                <ul class="favorite-area__con">
+                    <li class="on"><a href="#">CGV 강남</a></li>
+                    <li><a href="#">CGV 강변</a></li>
+                    <li><a href="#">CGV 건대입구</a></li>
+                    <li><a href="#">CGV 구로</a></li>
+                    <li><a href="#">CGV 대학로</a></li>
+                    <li><a href="#">CGV 동대문</a></li>
+                    <li><a href="#">CGV 등촌</a></li>
+                    <li><a href="#">CGV 명동</a></li>
+                    <li><a href="#">CGV 명동역 씨네라이브러리</a></li>
+                    <li><a href="#">CGV 목동</a></li>
+                    <li><a href="#">CGV 미아</a></li>
+                    <li><a href="#">CGV 방학</a></li>
+                    <li><a href="#">CGV 불광</a></li>
+                    <li><a href="#">CGV 상봉</a></li>
+                    <li><a href="#">CGV 성신여대입구</a></li>
+                    <li><a href="#">CGV 송파</a></li>
+                    <li><a href="#">CGV 수유</a></li>
+                    <li><a href="#">CGV 신촌아트레온</a></li>
+                    <li><a href="#">CGV 압구정</a></li>
+                    <li><a href="#">CGV 여의도</a></li>
+                    <li><a href="#">CGV 연남</a></li>
+                    <li><a href="#">CGV 영등포</a></li>
+                    <li><a href="#">CGV 왕십리</a></li>
+                    <li><a href="#">CGV 용산아이파크몰</a></li>
+                    <li><a href="#">CGV 중계</a></li>
+                    <li><a href="#">CGV 천호</a></li>
+                    <li><a href="#">CGV 청담씨네시티</a></li>
+                    <li><a href="#">CGV 피카다리1958</a></li>
+                    <li><a href="#">CGV 하계</a></li>
+                    <li><a href="#">CGV 홍대</a></li>
+                    <li><a href="#">CINE de CHEF 압구정</a></li>
+                    <li><a href="#">CINE de CHEF 용산아이파크몰</a></li>
+                </ul>
+                <!-- //favorite-area__con-->
+            </div>
+            <!-- //fovorite-area -->
+        </section>
+        <!-- // favorite-->
+        <section class="theater">
+            <h3><img src="image/h3_theater.png" alt="극장타이틀"></h3>
+            <div class="theater-top">
+                <h4 class="theater-top__title">CGV 강남</h4>
+                <button type="button" onclick="location.href='#'" class="theater-top__btn">단체/대관문의</button>
+            </div>
+            <!--// theater-top -->
+            <div class="theater-con">
+                <div class="theater-con__text">
+                    <div class="theater-con__text--left">
+                        <div class="theater-con__text--left--adr">
+                            서울특별시 강남구 역삼동 814-6 스타플렉스<br/>서울특별시 강남구 강남대로 438 (역삼동)
+                            <span class="theater-con__text--left--adr--park"><a href="#">위치/주차안내 ></a></span>
+                        </div>
+                        <div class="theater-con__text--left--info">
+                            1544-1122<br/>6관 / 874석
+                        </div>
+                        <div class="theater-con__text--left--type">
+                            <div class="theater-con__text--left--type--sweet"></div>
+                            <div class="theater-con__text--left--type--screen"></div>
+                        </div>
+                    </div>
+                    <!-- // theater-con__text--left-->
+                    <div class="theater-con__text--right">
+                        <p class="theater-con__text--right--title">공지사항</p>
+                        <button class="theater-con__text--right--btn" onclick="location.href='#'"></button>
+                        <ul class="theater-con__text--right--notice">
+                            <li><a href="#">IMAX AMAZING RACE 이벤트 내용 업데이트 안내사항</a></li>
+                            <li><a href="#">[시스템점검] 현대M포인트 사용 일시중단 안내(3월23일부터~)</a></li>
+                        </ul>
+                    </div>
+                    <!-- // theater-con__text--right-->
+                </div>
+                <!-- //theater-con__text -->
+            </div>
+            <!-- //theater-con -->
+            <div class="theater__ad">
+                <img src="image/980x90ad.png" alt="중간광고이미지">
+            </div>
+            <!-- // theater-ad -->
+            <ul class="theater__tab">
+                <li class="on"><a href="#">상영시간표</a></li>
+                <li><a href="#">위치/주차안내</a></li>
+            </ul>
+        </section>
+        <!--theater-->
+        <section class="main-content">
+            <div class="schedule">
+                <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide schedule__date on">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>토</span>
+                                <span class="schedule__date--day">23</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>일</span>
+                                <span class="schedule__date--day">24</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>월</span>
+                                <span class="schedule__date--day">25</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>화</span>
+                                <span class="schedule__date--day">26</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>수</span>
+                                <span class="schedule__date--day">27</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>목</span>
+                                <span class="schedule__date--day">28</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>금</span>
+                                <span class="schedule__date--day">29</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">04월<br/>토</span>
+                                <span class="schedule__date--day">30</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">05월<br/>일</span>
+                                <span class="schedule__date--day">01</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">05월<br/>월</span>
+                                <span class="schedule__date--day">02</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">05월<br/>화</span>
+                                <span class="schedule__date--day">03</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">05월<br/>수</span>
+                                <span class="schedule__date--day">04</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">05월<br/>목</span>
+                                <span class="schedule__date--day">05</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide schedule__date">
+                            <a href="#">
+                                <span class="schedule__date--month">05월<br/>금</span>
+                                <span class="schedule__date--day">06</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- // mySwiper -->
+            </div>
+            <!-- // schedule -->
+            <ul class="view-info">
+                <li><a href="#">관람가격 안내</a></li>
+                <li><a href="#">관람등급 안내</a></li>
+            </ul> 
+            <!-- //view-info -->
+            <div class="slt-time">
+                <div class="slt-time__top">
+                    <span class="slt-time__top--day">조조</span>
+                    <span class="slt-time__top--night">심야</span>
+                    <span class="slt-time__top--notice">* 시간을 클릭하시면 빠른 예매를 하실 수 있습니다.</span>
+                </div>
+                <!-- // slt-time__top-->
+                <div class="slt-time__con">
+                    <div class="slt-time__con--info">
+                        <span class="slt-time__con--info--age--12">12</span>
+                        <span class="slt-time__con--info--title">공기살인</span>
+                        <span class="slt-time__con--info--state">상영중</span>
+                        <ul class="slt-time__con--info--detail">
+                            <li>드라마/ </li>
+                            <li>108분/ </li>
+                            <li>2022.04.22 개봉</li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--info-->
+                    <div class="slt-time__con--seat">
+                        <ul class="slt-time__con--seat--info">
+                            <li>2D</li>
+                            <li>1관 6층</li>
+                            <li>총 158석</li>
+                        </ul>
+                        <!-- //slt-time__con--seat--info-->
+                        <ul class="slt-time__con--seat--box">
+                            <li>
+                                <a href="#">
+                                    <p class="slt-time__con--seat--box--time--no">21:20</p>
+                                    <p class="slt-time__con--seat--box--state--no">마감</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="slt-time__con--seat--box--time--ok">22:20</p>
+                                    <p class="slt-time__con--seat--box--state--ok">137석</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--seat -->
+                </div>
+                <!-- //slt-time__con -->
+                <div class="slt-time__con">
+                    <div class="slt-time__con--info">
+                        <span class="slt-time__con--info--age--12">12</span>
+                        <span class="slt-time__con--info--title">로스트 시티</span>
+                        <span class="slt-time__con--info--state">상영중</span>
+                        <ul class="slt-time__con--info--detail">
+                            <li>액션, 코미디, 로맨스, 멜로, 어드벤처/ </li>
+                            <li>112분/ </li>
+                            <li>2022.04.23 개봉</li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--info-->
+                    <div class="slt-time__con--seat">
+                        <ul class="slt-time__con--seat--info">
+                            <li>2D</li>
+                            <li>2관 (LAser) 층</li>
+                            <li>총 124석</li>
+                        </ul>
+                        <!-- //slt-time__con--seat--info-->
+                        <ul class="slt-time__con--seat--box">
+                            <li>
+                                <a href="#">
+                                    <p class="slt-time__con--seat--box--time--no">21:20</p>
+                                    <p class="slt-time__con--seat--box--state--no">마감</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--seat -->
+                </div>
+                <!-- //slt-time__con -->
+                <div class="slt-time__con">
+                    <div class="slt-time__con--info">
+                        <span class="slt-time__con--info--age--12">12</span>
+                        <span class="slt-time__con--info--title">신비한 동물들과 덤블도어의 비밀</span>
+                        <span class="slt-time__con--info--state">상영중</span>
+                        <ul class="slt-time__con--info--detail">
+                            <li>어드벤처, 가족, 환타지/ </li>
+                            <li>142분/ </li>
+                            <li>2022.04.215 개봉</li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--info-->
+                    <div class="slt-time__con--seat">
+                        <ul class="slt-time__con--seat--info">
+                            <li>2D</li>
+                            <li>3관 8층</li>
+                            <li>총 124석</li>
+                        </ul>
+                        <!-- //slt-time__con--seat--info-->
+                        <ul class="slt-time__con--seat--box">
+                            <li>
+                                <a href="#">
+                                    <p class="slt-time__con--seat--box--time--no">21:20</p>
+                                    <p class="slt-time__con--seat--box--state--no">마감</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--seat -->
+                    <div class="slt-time__con--seat">
+                        <ul class="slt-time__con--seat--info">
+                            <li>2D</li>
+                            <li>5관(LAser) 층</li>
+                            <li>총 124석</li>
+                        </ul>
+                        <!-- //slt-time__con--seat--info-->
+                        <ul class="slt-time__con--seat--box">
+                            <li>
+                                <a href="#">
+                                    <p class="slt-time__con--seat--box--time--ok">22:20</p>
+                                    <p class="slt-time__con--seat--box--state--ok">158석</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //slt-time__con--seat -->
+                </div>
+                <!-- //slt-time__con -->
+                <div class="slt-time__notice">
+                    &middot; 입장 지연에 따른 관람 불편을 최소화하기 위해 영화는 10분 후 상영이 시작됩니다.
+                </div>
+            </div>
+            <!-- //slt-time -->
+        </section>
+        <!-- // main-content -->
+        <aside class="col-aside__right">
+            <ul class="col-aside__ad">
+                <li><a href="#"><img src="image/asidead2.png" alt="광고이미지"></a></li>
+                <li><a href="#"><img src="image/asidead1.jpg" alt="광고이미지"></a></li>
+            </ul>
+        </aside>
+        <!-- //col-aside__right -->
+        <div class="scrollBtn">
+            <a href="movieChart.html" class="ticketBtn">예매하기</a>
+            <a href="#" class="upBtn top"><img src="image/upBtn.png" alt="상단이동버튼"></a>
+        </div>
+        <!-- //col-aside__right -->
+    </main>
+
+    <footer>
+        <div class="footAd">
+            <div class="footAdImg"><a href="#"><img src="image/footerAdImg.png" alt="하단광고이미지"></a></div>
+        </div>
+        <!--footAd-->
+        <div class="footInfo">
+            <div class="content">
+            <ul class="policyList">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">광고/제휴/출점문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">편성기준</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">사이버감사실</a></li>
+            </ul>
+            <div class="companyInfo">
+                (04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br/>
+                대표이사 : 허민회 · 사업자등록번호 : 104-81-45690 · 통신판매업신고번호 : 2017-서울용산-0662 <a href="#">사업자정보확인</a><br/>
+                호스팅사업자 : CJ올리브네트웍스 · 개인정보보호 책입자 : 심준범 · 대표이메일 :cjcgvmaster@cj.net
+                CJ CGC. All Rights Reserved
+            </div>
+            </div>
+        </div>
+        <!--footInfo-->
+    </footer>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 8,
+        slidesPerGroup: 8,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</body>
+</html>

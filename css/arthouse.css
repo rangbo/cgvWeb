@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+.main-top{
+    display: flex;
+    align-items: center;
+    height: 61px;
+    margin-top: 30px;
+}
+.main-top__logo{
+    font-size: 36px;
+    font-weight: 500;
+    flex: 1;
+    text-align: left;
+}
+.main-top__logo::after{
+    content: '';
+    width: 30px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: top;
+    background: url("../image/arthouseIcon.png") no-repeat 0 0 / 30px auto;
+}
+.main-top__list li{
+    display: inline-block;
+    margin-right: 26px;
+}
+.main-top__list li:last-child{
+    margin-right: 0;
+}
+.main-top__list li a{
+    font-weight: 500;
+    color: #666666;
+}
+.main-top__list li.on a{
+    color: #FB4357;
+    font-weight: 500;
+}
+.main-top__list li.on a::before{
+    content: '';
+    width: 8px;
+    height: 9px;
+    display: inline-block;
+    transform: rotate(270deg);
+    vertical-align: middle;
+    margin-right: 2px;
+    background: url("../image/redMiniPolygon.png") no-repeat 0 0 / 8px auto;
+}
+.main-view__now{
+    margin-top: 50px;
+}
+.main-view__now img{
+    width: 334px;
+    height: 41px;
+}
+.main-view__now h3::before{
+    content: '';
+    width: 309px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    background: url("../image/1pxDouble.jpg") repeat-x;
+}
+.main-view__now h3::after{
+    content: '';
+    width: 309px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 14px;
+    background: url("../image/1pxDouble.jpg") repeat-x;
+}
+.main-view__now--wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.main-view__now--mov--img {
+    position: relative;
+}
+.main-view__now--mov--img img{
+    width:197px;
+    height: 260px;
+    position: relative;
+}
+.main-view__now--mov--img::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 62px;
+    background:url("../image/bg_poster-gradation.png") repeat-x center;
+    z-index: 2;
+}
+.main-view__now--mov--img::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 59px;
+    height: 18px;
+    background:url("../image/arthousePoster.png") no-repeat center / 59px auto;
+    z-index: 3;
+}
+.main-view__now--mov--badge1{
+    display: block;
+    padding: 3px 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    z-index: 4;
+    background: #4A90E2;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.main-view__now--mov--badge2{
+    display: block;
+    padding: 3px 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    z-index: 4;
+    background: #F98302;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.main-view__now--mov--title{
+    text-align: left;
+    margin-top: 10px;
+}
+.main-view__now--mov--title a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.main-view__now--mov--Con1{
+    float: left;
+    font-size: 11px;
+    color: #444444;
+}
+.main-view__now--mov--Con1 em{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.main-view__now--mov--Con2{
+    float: left;
+    font-size: 12px;
+    color: #444444;
+    font-weight: 500;
+}
+.main-view__now--mov--date{
+    font-size: 11px;
+    color: #666666;
+    font-weight: 500;
+    text-align: left;
+    clear: both;
+    margin-top: 3px;
+}
+.main-view__now--mov--date em{
+    color: #FB4357;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight:bold;
+}
+.main-view__now--mov--btn{
+    width: 97px;
+    height: 25px;
+    background: #FB4357;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px;
+}
+.main-view__now--mov--Con1::after{
+    content: '';
+    width: 1px;
+    height: 10px;
+    font-size: 10px;
+    display: inline-block;
+    margin:0 6px;
+    border-right: 1px solid #cccccc;
+}
+.main-view__now--mov--Con2::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../image/eggGoldenegggood.png") no-repeat 0 0 / 16px auto;
+}
+.main-project{
+    display: flex;
+    margin-top: 65px;
+}
+.main-project__img img{
+    width: 299px;
+    height: 376px;
+}
+.main-project__video{
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+.main-project__video--play{
+    width: 66px;
+    height: 66px;
+    border-radius: 100px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background:#FF4757 url("../image/PinkPlayBtn.png") no-repeat center / 27px auto;
+}
+.main-talk{
+    margin: 85px 0 150px 0;
+}
+.main-talk h5::before{
+    content: '';
+    width: 296px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    background: url("../image/1pxDouble.jpg") repeat-x;
+}
+.main-talk h5::after{
+    content: '';
+    width: 296px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 14px;
+    background: url("../image/1pxDouble.jpg") repeat-x;
+}
+.main-talk__list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.main-talk__list--box--text{
+    text-align: left;
+    width: 188px;
+    font-weight: 500;
+    margin-top: 25px;
+}

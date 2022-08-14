@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+.special{
+    position: relative;
+}
+.swiper{
+    width: 900px !important;
+    position: unset !important;
+    margin-top: 12px;
+}
+.swiper-slide {
+    width: 130px !important;
+    height: 150px  !important;
+    background: url("../image/sprite_specialtheater.jpg") no-repeat !important;
+    float: left;
+}
+.swiper-slide a{
+    font-size: 0;
+}
+.swiper-button-next {
+    background: url("../image/special_swiper_btn.png") no-repeat;
+    background-size: auto;
+    background-position: 0;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    width: 33px !important;
+    height: 66px !important;
+}
+.swiper-button-prev {
+    background: url("../image/special_swiper_btn.png") no-repeat;
+    background-size: auto;
+    background-position: 100%;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    width: 33px !important;
+    height: 66px !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+.fourdx{
+    background-position: 0 0 !important;
+}
+.fourdx:hover, 
+.fourdx.on{
+    background-position: 0 -150px !important;
+}
+.imax{
+    background-position: -130px 0 !important;
+}
+.imax:hover, 
+.imax.on{
+    background-position: -130px -150px !important;
+}
+.goldclass{
+    background-position: -260px 0 !important;
+}
+.goldclass:hover, 
+.goldclass.on{
+    background-position: -260px -150px !important;
+}
+.cinedechef{
+    background-position: -390px 0 !important;
+}
+.cinedechef:hover, 
+.cinedechef.on{
+    background-position: -390px -150px !important;
+}
+.starium{
+    background-position: -520px 0 !important;
+}
+.starium:hover, 
+.starium.on{
+    background-position: -520px -150px !important;
+}
+.private{
+    background-position: -650px 0 !important;
+}
+.private:hover, 
+.private.on{
+    background-position: -650px -150px !important;
+}
+.brand{
+    background-position: -780px 0 !important;
+}
+.brand:hover, 
+.brand.on{
+    background-position: -780px -150px !important;
+}
+.sweetbox{
+    background-position: -910px 0 !important;
+}
+.sweetbox:hover, 
+.sweetbox.on{
+    background-position: -910px -150px !important;
+}
+.veatbox{
+    background-position: -1040px 0 !important;
+}
+.veatbox:hover, 
+.veatbox.on{
+    background-position: -1040px -150px !important;
+}
+.screenx{
+    background-position: -1170px 0 !important;
+}
+.screenx:hover, 
+.screenx.on{
+    background-position: -1170px -150px !important;
+}
+.soundx{
+    background-position: -1300px 0 !important;
+}
+.soundx:hover,
+.soundx.on{
+    background-position: -1300px -150px !important;
+}
+.premium{
+    background-position: -1430px 0 !important;
+}
+.premium:hover, 
+.premium.on{
+    background-position: -1430px -150px !important;
+}
+.cinekids{
+    background-position: -1560px 0 !important;
+}
+.cinekids:hover, 
+.cinekids.on{
+    background-position: -1560px -150px !important;
+}
+.spherex{
+    background-position: -1690px 0 !important;
+}
+.spherex:hover, 
+.spherex.on{
+    background-position: -1690px -150px !important;
+}
+.tempur{
+    background-position: -1820px 0 !important;
+}
+.tempur:hover, 
+.tempur.on{
+    background-position: -1820px -150px !important;
+}
+.subpac{
+    background-position: -1950px 0 !important;
+}
+.subpac:hover, 
+.subpac.on{
+    background-position: -1950px -150px !important;
+}
+.video{
+    margin-top: 30px;
+}
+.video__top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.video__top h2{
+    flex: 1;
+    text-align: left;
+    font-size: 36px;
+}
+.video__top--list li{
+    display: inline-block;
+    margin-left: 26px;
+}
+.video__top--list li a{
+    font-weight: 500;
+    color: #666666;
+}
+.video__top--list li.on a{
+    font-weight: 500;
+    color: #FB4357;
+}
+.video__top--list li.on::before{
+    content: '';
+    width: 9px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 2px;
+    background: url("../image/redArrow.png") no-repeat 0 0 / 9px auto;
+}
+.lineup{
+    margin-top: 36px;
+}
+.lineup h3::before{
+    content: '';
+    width: 388px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    background: url("../image/1pxDouble.jpg") repeat-x;
+}
+.lineup h3::after{
+    content: '';
+    width: 388px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 14px;
+    background: url("../image/1pxDouble.jpg") repeat-x;
+}
+.lineup--wrap{
+    display: flex;
+    margin-top: 45px;
+    gap: 64px;
+}
+.lineup__mov--top--now{
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 197px;
+    height: 28px;
+    background: #333333;
+    margin:0 0 4px 2px;
+}
+.lineup__mov--top--soon{
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 197px;
+    height: 28px;
+    background: #FB4357;
+    margin:0 0 4px 2px;
+}
+.lineup__mov--img {
+    position: relative;
+}
+.lineup__mov--img img{
+    width:197px;
+    height: 260px;
+    position: relative;
+}
+.lineup__mov--img::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 62px;
+    background:url("../image/bg_poster-gradation.png") repeat-x center;
+    z-index: 2;
+}
+.lineup__mov--img::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 59px;
+    height: 18px;
+    background:url("../image/arthousePoster.png") no-repeat center / 59px auto;
+    z-index: 3;
+}
+.lineup__mov--badge1{
+    display: block;
+    padding: 3px 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    z-index: 4;
+    background: #4A90E2;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.lineup__mov--badge2{
+    display: block;
+    padding: 3px 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    z-index: 4;
+    background: #F98302;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.lineup__mov--title{
+    text-align: left;
+    margin-top: 10px;
+}
+.lineup__mov--title a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.lineup__mov--Con1{
+    float: left;
+    font-size: 11px;
+    color: #444444;
+}
+.lineup__mov--Con1 em{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.lineup__mov--Con2{
+    float: left;
+    font-size: 12px;
+    color: #444444;
+    font-weight: 500;
+}
+.lineup__mov--date{
+    font-size: 11px;
+    color: #666666;
+    font-weight: 500;
+    text-align: left;
+    clear: both;
+    margin-top: 3px;
+}
+.lineup__mov--date em{
+    color: #FB4357;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight:bold;
+}
+.lineup__mov--btn{
+    width: 97px;
+    height: 25px;
+    background: #FB4357;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px;
+}
+.lineup__mov--Con1::after{
+    content: '';
+    width: 1px;
+    height: 10px;
+    font-size: 10px;
+    display: inline-block;
+    margin:0 6px;
+    border-right: 1px solid #cccccc;
+}
+.lineup__mov--Con2::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../image/eggGoldenegggood.png") no-repeat 0 0 / 16px auto;
+}
+.club{
+    margin: 50px auto 150px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+}
+.club__timer{
+    width: 322px;
+    height: 320px;
+    background: #A9A9A5;
+}
+.club__timer--img{
+    padding-top: 40px;
+}
+.club__timer h5{
+    color: #FEFEEF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline;
+}
+.club__timer--more{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../image/redmorebtn.png") no-repeat 0 0 / 20px auto;
+}
+.club__timer--text--top{
+    color: #FEFEEF;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+.club__timer--text--top::before{
+    content: '';
+    width: 65px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../image/text_specialtheater_03.png") no-repeat 0 0 / 65px auto;
+}
+.club__timer--text--btm{
+    color: #FEFEEF;
+    font-size: 15px;
+    font-weight: 500;
+}
